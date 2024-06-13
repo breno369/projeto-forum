@@ -1,0 +1,39 @@
+li{
+	color: #000000;
+	text-decoration: none;
+	font-size: 20px;
+	list-style-type: none; 
+}
+.list{
+	padding-bottom: 20px;
+}
+.card {
+	padding: 5px;
+}
+.content{
+	font-size: 14px;
+}
+
+.card_item { border: 1px solid black;}
+options{
+    cursor: pointer;	
+}
+.fa {
+  font-size: 1.2em;
+}
+.fa-thumbs-down, .fa-thumbs-o-down {
+  transform:rotateY(180deg);
+}
+.logged_in_user {
+  padding: 10px 30px 0px;
+}
+i {
+  color: blue;
+ cursor: pointer; 
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 20px; 
+}
