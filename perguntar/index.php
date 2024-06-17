@@ -338,7 +338,7 @@ if ($permissao[0] != 0) { // Quanto mais proximo de 0 for a permissao, mais aces
                     <button type="button" class="editar btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" style="color: #fff;">
                       Editar perfil
                     </button>
-                    <form enctype="multipart/form-data" action="processa.php" method="post" class="dropdown-menu p-4">
+                    <!-- <form enctype="multipart/form-data" action="processa.php" method="post" class="dropdown-menu p-4">
                       <div class="mb-3">
                         <div class="mb-3">
                           <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
@@ -347,7 +347,7 @@ if ($permissao[0] != 0) { // Quanto mais proximo de 0 for a permissao, mais aces
                         </div>
                         <button type="submit" class="btn btn-outline-secondary">Enviar</button>
                       </div>
-                    </form>
+                    </form> -->
                   </li>
                   <li>
                     <hr class="dropdown-divider" style=" border: 1px solid rgba(255, 255, 255, 0.2);">

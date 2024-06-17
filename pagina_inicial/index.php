@@ -454,7 +454,7 @@ if (isset($_SESSION['nome'])) {
                                             <button type="button" class="editar btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" style="color: #fff;">
                                                 Editar perfil
                                             </button>
-                                            <form enctype="multipart/form-data" action="../perguntas/processa.php" method="post" class="dropdown-menu p-4">
+                                            <!-- <form enctype="multipart/form-data" action="../perguntas/processa.php" method="post" class="dropdown-menu p-4">
                                                 <div class="mb-3">
                                                     <div class="mb-3">
                                                         <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
@@ -463,7 +463,7 @@ if (isset($_SESSION['nome'])) {
                                                     </div>
                                                     <button type="submit" class="btn btn-outline-secondary">Enviar</button>
                                                 </div>
-                                            </form>
+                                            </form> -->
                                         </li>
                                     <?php } ?>
                                     <li>

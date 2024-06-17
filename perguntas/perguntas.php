@@ -6,7 +6,7 @@ if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['nome']) == true)
     session_unset();
     header('location:../cadastro_usuario/login.php?erro1');
 }
-var_dump($_SESSION);
+// var_dump($_SESSION);
 
 if ($_SESSION != null && (isset($_SESSION['email']) == true) and (isset($_SESSION['nome']) == true)) {
     include "../pdo/PDO.php";
@@ -431,7 +431,7 @@ if ($_SESSION != null && (isset($_SESSION['email']) == true) and (isset($_SESSIO
                                         <button type="button" class="editar btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" style="color: #fff;">
                                             Editar perfil
                                         </button>
-                                        <form enctype="multipart/form-data" action="processa.php" method="post" class="dropdown-menu p-4">
+                                        <!-- <form enctype="multipart/form-data" action="processa.php" method="post" class="dropdown-menu p-4">
                                             <div class="mb-3">
                                                 <div class="mb-3">
                                                     <label for="formFileSm" class="form-label" style="color: #fff;">Procurar</label>
@@ -439,7 +439,7 @@ if ($_SESSION != null && (isset($_SESSION['email']) == true) and (isset($_SESSIO
                                                 </div>
                                                 <button type="submit" class="btn btn-outline-secondary">Enviar</button>
                                             </div>
-                                        </form>
+                                        </form> -->
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider" style=" border: 1px solid rgba(255, 255, 255, 0.2);">
