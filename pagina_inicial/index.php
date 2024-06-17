@@ -454,6 +454,8 @@ if (isset($_SESSION['nome'])) {
                                             <button type="button" class="editar btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" style="color: #fff;">
                                                 Editar perfil
                                             </button>
+                                            <a href="../usuario/pagina_usuario.php" target="_blank">Editar perfil</a>
+
                                             <!-- <form enctype="multipart/form-data" action="../perguntas/processa.php" method="post" class="dropdown-menu p-4">
                                                 <div class="mb-3">
                                                     <div class="mb-3">
