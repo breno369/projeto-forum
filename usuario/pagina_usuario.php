@@ -108,72 +108,6 @@ if ($_SESSION != null && (isset($_SESSION['email']) == true) and (isset($_SESSIO
         #a3a8 b7 
         */
 
-        /*********HEADER*********/
-        .item1 {
-            background-color: #8990A2;
-            gap: 0px;
-            padding: 0px;
-            padding-bottom: 5px;
-            border: none;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .dropdown-menu {
-            background-color: #8990A2;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            border-radius: 0.375rem;
-
-        }
-
-        .dropdown-item {
-            color: #fff;
-            margin: 0px;
-
-        }
-
-        .dropdown-menu li a:hover {
-            background-color: #8990A2;
-            color: #ffffffb4;
-
-        }
-
-        .dropdown-menu li p:hover {
-            background-color: #8990A2;
-            color: #fff;
-
-        }
-
-        .editar {
-            border: none;
-            background-color: #8990A2;
-            padding-left: 16px;
-
-        }
-
-        .editar:hover {
-            border: none;
-            background-color: #8990A2;
-            color: #ffffffb4;
-        }
-
-        .editar:focus {
-            border: none;
-            background-color: #8990A2;
-            color: #ffffffb4;
-        }
-
-        .btn-outline-secondary {
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            color: #fff;
-        }
-
-        .btn-outline-secondary:hover {
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            background-color: rgba(255, 255, 255, 0.2);
-
-        }
-
         /*********MAIN*********/
         .item2 {
             background-color: #788199;
@@ -370,7 +304,77 @@ if ($_SESSION != null && (isset($_SESSION['email']) == true) and (isset($_SESSIO
 
         /* #788199 */
     </style> -->
+
+    <style>
+        /*********HEADER*********/
+        .item1 {
+            background-color: #8990A2;
+            gap: 0px;
+            padding: 0px;
+            padding-bottom: 5px;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .dropdown-menu {
+            background-color: #8990A2;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 0.375rem;
+
+        }
+
+        .dropdown-item {
+            color: #fff;
+            margin: 0px;
+
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #8990A2;
+            color: #ffffffb4;
+
+        }
+
+        .dropdown-menu li p:hover {
+            background-color: #8990A2;
+            color: #fff;
+
+        }
+
+        .editar {
+            border: none;
+            background-color: #8990A2;
+            padding-left: 16px;
+
+        }
+
+        .editar:hover {
+            border: none;
+            background-color: #8990A2;
+            color: #ffffffb4;
+        }
+
+        .editar:focus {
+            border: none;
+            background-color: #8990A2;
+            color: #ffffffb4;
+        }
+
+        .btn-outline-secondary {
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .btn-outline-secondary:hover {
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.2);
+
+        }
+    </style>
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
@@ -461,60 +465,183 @@ if ($_SESSION != null && (isset($_SESSION['email']) == true) and (isset($_SESSIO
         </div>
 
         <!--------------------MAIN-------------------->
-
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 100,
+                    'GRAD' 0,
+                    'opsz' 24
+            }
+        </style>
         <style>
             .container_main {
-                display: flex;
                 height: 100vh;
+                background-color: #8990A2;
             }
 
             .link_user {
                 width: 30vw;
                 height: 100%;
-                background-color: blue;
+                /* background-color: blue; */
                 display: flex;
                 flex-direction: column;
                 justify-content: start;
                 align-items: center;
                 position: sticky;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
             }
 
             .actions_user {
                 height: 100%;
                 width: 70vw;
-                background-color: green;
+                /* background-color: green; */
             }
 
             .img_user {
                 width: 150px;
                 height: 150px;
                 border-radius: 100%;
-                background-color: #8990A2;
+                background-color: #fff;
+                margin: 50px 0 0 0;
             }
 
-            .list_link_user>li {
+            .list_link_user {
+                margin: 45px 0 0 0 !important;
+                width: 100%;
+                padding: 0;
+            }
+
+            .list_link_user>button {
                 color: #fff;
-                text-decoration: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 13px 0 13px 20%;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                font-size: 20px;
+                line-height: 45px;
+                font-weight: 300;
+                border-radius: 0 !important;
+            }
+
+            .list_link_user>.active {
+                background-color: #ffffff33 !important;
+                border-bottom: 1px solid #00000000 !important;
+            }
+
+            .nav-link:hover {
+                color: #ffffff33 !important;
             }
         </style>
+        <!-- <span class="material-symbols-outlined" style="font-size: 35px;">chevron_right</span> -->
         <div class="container_main">
-            <div class="link_user">
-                <div class="img_user"></div>
-                <ul class="list_link_user">
-                    <li><a href="#">Editar imagem de perfil</a></li>
-                    <li><a href="#">Mudar apelido</a></li>
-                    <li><a href="#">Ver suas perguntas</a></li>
-                    <li><a href="#">Ver suas respostas</a></li>
-                    <li><a href="#">Editar informacoes pessoais</a></li>
-                    <li><a href="#">Mudar senha</a></li>
-                    <li><a href="#">Sair</a></li>
-                    <li><a href="#">Apagar perfil</a></li>
-                </ul>
-            </div>
-            <div class="actions_user">
-                <p>parte das acoes</p>
+            <div class="d-flex align-items-start">
+
+                <div class="link_user">
+
+                    <div style="height: auto;width: 100%;display: flex;flex-direction: column;align-items: center;">
+
+                        <div class="img_user"></div>
+                        <div class="nav flex-column nav-pills me-3 list_link_user" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                            <button class="nav-link active" id="v-pills-editarImg-tab" data-bs-toggle="pill" data-bs-target="#v-pills-editarImg" type="button" role="tab" aria-controls="v-pills-editarImg" aria-selected="true">Editar imagem de perfil</button>
+                            <button class="nav-link" id="v-pills-editarNome-tab" data-bs-toggle="pill" data-bs-target="#v-pills-editarNome" type="button" role="tab" aria-controls="v-pills-editarNome" aria-selected="false">Mudar apelido</button>
+                            <button class="nav-link" id="v-pills-verPerguntas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-verPerguntas" type="button" role="tab" aria-controls="v-pills-verPerguntas" aria-selected="false">Ver suas perguntas</button>
+                            <button class="nav-link" id="v-pills-verRespostas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-verRespostas" type="button" role="tab" aria-controls="v-pills-verRespostas" aria-selected="false">Ver suas respostas</button>
+                            <button class="nav-link" id="v-pills-editarInfo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-editarInfo" type="button" role="tab" aria-controls="v-pills-editarInfo" aria-selected="false">Editar informacoes pessoais</button>
+                            <button class="nav-link" id="v-pills-mudarSenha-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mudarSenha" type="button" role="tab" aria-controls="v-pills-mudarSenha" aria-selected="false">Mudar senha</button>
+                            <button class="nav-link" id="v-pills-sair-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sair" type="button" role="tab" aria-controls="v-pills-sair" aria-selected="false">Sair</button>
+                            <button class="nav-link" id="v-pills-del-tab" data-bs-toggle="pill" data-bs-target="#v-pills-del" type="button" role="tab" aria-controls="v-pills-del" aria-selected="false">Deletar minha conta</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-content actions_user" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-editarImg" role="tabpanel" aria-labelledby="v-pills-editarImg-tab">
+                        <p>
+                            Area para editar foto de perfil
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-editarNome" role="tabpanel" aria-labelledby="v-pills-editarNome-tab">
+                        <p>
+                            Area para Mudar apelido
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-verPerguntas" role="tabpanel" aria-labelledby="v-pills-verPerguntas-tab">
+                        <p>
+                            Area para Ver suas perguntas
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-verRespostas" role="tabpanel" aria-labelledby="v-pills-verRespostas-tab">
+                        <p>
+                            Area para ver suas respostas
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-editarInfo" role="tabpanel" aria-labelledby="v-pills-editarInfo-tab">
+                        <p>
+                            Area para editar informacoes pessoais
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-mudarSenha" role="tabpanel" aria-labelledby="v-pills-mudarSenha-tab">
+                        <p>
+                            Area para mudar senha
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-sair" role="tabpanel" aria-labelledby="v-pills-sair-tab">
+                        <p>
+                            Area para sair
+                        </p>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-del" role="tabpanel" aria-labelledby="v-pills-del-tab">
+                        <p>
+                            Area para deletar minha conta
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
+        <!-- <div class="d-flex align-items-start"> ------------------
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero purus, ultricies sed pharetra a, rutrum ac eros. Praesent egestas ante at odio porttitor, in efficitur metus posuere. Praesent lectus odio, dictum eget convallis sit amet, aliquam ac ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eleifend euismod libero. Quisque dui odio, lacinia nec ipsum ac, ultricies laoreet enim. Aliquam erat volutpat. Pellentesque sit amet varius sapien. Morbi non elementum ipsum. Praesent dignissim id risus sed vehicula. Aenean eu placerat magna. Donec mollis ornare dui, in varius sem sodales non. Fusce dapibus tellus nec nulla finibus tempor quis a dolor. Nunc velit tortor, suscipit quis tincidunt luctus, congue id erat. Suspendisse sollicitudin sapien et gravida vulputate. Etiam faucibus nibh non arcu tincidunt commodo.
+
+                                Sed commodo dignissim sapien sit amet volutpat. Fusce id urna ligula. Donec est orci, fermentum nec iaculis in, imperdiet a nibh. Mauris blandit augue id velit iaculis eleifend. Praesent vulputate quis velit eu viverra. Aenean molestie augue in elit rutrum consequat. Phasellus arcu purus, scelerisque id bibendum quis, aliquam id nibh. Proin tincidunt tincidunt mi vel maximus. Sed viverra augue in rhoncus lacinia. Donec sodales quam nunc, ac tincidunt diam sodales id. Vivamus euismod sapien lectus, lacinia dapibus ante pharetra congue. Donec non ligula in dolor blandit fermentum. Quisque volutpat nulla a sem molestie ornare. Vestibulum a massa placerat, cursus turpis ac, volutpat mi. Aliquam mollis tellus in purus venenatis, auctor tristique urna varius. Integer ut ipsum ac ligula fringilla tincidunt posuere ac leo.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <p>
+                                Suspendisse volutpat neque id ex rutrum sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed accumsan condimentum risus a sollicitudin. Suspendisse potenti. Vivamus nisl sem, euismod id mi et, tristique viverra massa. Duis placerat laoreet nibh sit amet iaculis. Quisque ut aliquam enim. </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <p>
+                                Aliquam maximus dolor dui, at efficitur ex scelerisque sit amet. Proin vitae odio eget purus rhoncus facilisis. Etiam semper turpis in diam mattis, quis rhoncus tellus fringilla. Sed vulputate justo orci, non porttitor elit venenatis et. Pellentesque at laoreet justo. Maecenas faucibus consequat nibh ac vulputate. Praesent fermentum nisl sit amet dui iaculis consectetur. Nullam augue diam, tincidunt id urna sed, iaculis egestas risus.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <p>
+                                Nunc facilisis nunc ac consectetur viverra. Nulla nibh diam, vehicula sit amet volutpat eget, mattis vel risus. Vestibulum vitae velit sapien. Integer porttitor posuere nulla, ac porttitor sem elementum sit amet. Integer sollicitudin tempor quam, non dapibus quam mattis ac. Pellentesque velit nibh, malesuada eu odio in, mattis blandit leo. Cras ornare elementum tincidunt. Morbi accumsan ullamcorper pellentesque. Donec nec massa nibh. Proin venenatis volutpat libero, eu maximus leo commodo hendrerit. Donec libero velit, accumsan sed placerat at, auctor id ante.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
 
         <!--------------------LIBRAS-------------------->
         <div vw class="enabled">
